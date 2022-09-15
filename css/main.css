@@ -359,9 +359,9 @@ nav {
 } */
 
 .navbar-inverse {
-  /* background: #2115D1; */
-  background-image: url(/img/banner2.jpeg);
-  background-size: cover;
+  background: #2115D1; 
+  /*background-image: url(/img/banner2.jpeg);
+  /*background-size: cover;
   /* background-repeat: no-repeat; */
 }
 
