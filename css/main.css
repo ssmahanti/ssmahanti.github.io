@@ -140,15 +140,15 @@ h4, h5, h6 {
   background-size: 88%;
 }
 #projects .panel-heading.proj-2 {
-  background-image: url(../img/projects/spuna1.png);
+  background-image: url(../img/projects/tango1.png);
   background-size: 95%;
 }
 #projects .panel-heading.proj-3 {
-  background-image: url(../img/projects/himalaya2.jpg);
+  background-image: url(../img/projects/spuna1.png);
   background-size: cover;
 }
 #projects .panel-heading.proj-4 {
-  background-image: url(../img/teton.jpg);
+  background-image: url(../img/himalaya2.jpg);
 }
 #projects .panel-heading.proj-5 {
   background-image: url(https://unsplash.it/300/200);
