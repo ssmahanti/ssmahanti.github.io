@@ -15,72 +15,204 @@
   <meta name="theme-color" content="#20364c">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+    crossorigin="anonymous"
+  >
 
-  <!-- Font Awesome Web Icons -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  >
 
   <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap">
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap"
+  >
 
   <!-- Local styles -->
-  <link rel="stylesheet" href="css/main.css?v=2">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Page-specific styles -->
+  <style>
+    .projects-intro {
+      margin-bottom: 35px;
+    }
+
+    .research-project {
+      max-width: 900px;
+      margin-bottom: 55px;
+    }
+
+    .project-meta {
+      margin-bottom: 5px;
+      color: #777;
+      font-size: 0.95em;
+    }
+
+    .research-project h2 {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    .project-paper {
+      margin-top: 12px;
+      margin-bottom: 20px;
+    }
+
+    .project-figure {
+      margin: 24px auto 32px;
+      text-align: center;
+    }
+
+    .project-figure img {
+      display: block;
+      width: 100%;
+      max-width: 680px;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .project-figure figcaption {
+      max-width: 680px;
+      margin: 8px auto 0;
+      color: #777;
+      font-size: 0.9em;
+      text-align: center;
+    }
+
+    @media (max-width: 767px) {
+      .research-project {
+        max-width: 100%;
+      }
+
+      .project-figure img {
+        max-width: 100%;
+      }
+    }
+  </style>
 
 </head>
 
 <body id="top" class="projects-page" tabindex="-1">
 
-  <!-- navbar include -->
+  <!-- Navbar -->
   <div id="navbar-include"></div>
 
   <div class="spacer-div-3 hidden-xs"></div>
 
   <!-- Main content -->
   <main id="main-container" class="container">
-    <h1>Projects</h1>
-    <p class="projects-intro">Selected studies on active crustal deformation and volcanic processes in the Andes.</p>
 
+    <h1>Projects</h1>
+
+    <p class="projects-intro">
+      Selected studies on active crustal deformation and volcanic processes in the Andes.
+    </p>
+
+    <!-- Santa Barbara Project -->
     <article class="research-project" aria-labelledby="santa-barbara-title">
-      <p class="project-meta">First author · Geology · 2026</p>
-      <h2 id="santa-barbara-title">Detachment-involved deformation in the Santa Bárbara system</h2>
+
+      <p class="project-meta">
+        First author · Geology · 2026
+      </p>
+
+      <h2 id="santa-barbara-title">
+        Detachment-involved deformation in the Santa Bárbara system
+      </h2>
+
       <p>
         How do inherited rift structures shape present-day mountain building in NW Argentina?
-        I combined a high-resolution earthquake catalog with receiver function images to
+        We combined a high-resolution earthquake catalog with receiver function images to
         investigate deformation beneath the Santa Bárbara system. We identified detachments
         at approximately 18 km and 8 km depth, with the shallower structure interpreted as
         a reactivated Salta rift detachment. The results show how the orientation of older
         faults influences where shortening is accommodated in the Andean foreland.
       </p>
-      <p class="project-paper"><a href="https://doi.org/10.1130/G53942.1" target="_blank" rel="noopener noreferrer">Read the paper in Geology →</a></p>
+
+      <p class="project-paper">
+        <a
+          href="https://doi.org/10.1130/G53942.1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Read the paper in Geology →
+        </a>
+      </p>
+
       <figure class="project-figure">
-        <!-- Replace this src and alt with the final Santa Bárbara figure. -->
-        <img src="img/projects/northline_event_velest.png" alt="Temporary research figure for the Santa Bárbara project; final figure to be added" loading="lazy">
-        <figcaption>Temporary figure — final project figure to be added.</figcaption>
+        <img
+          src="img/projects/northline_event_velest.png"
+          alt="Temporary research figure for the Santa Bárbara project; final figure to be added"
+          loading="lazy"
+        >
+        <figcaption>
+          Temporary figure — final project figure to be added.
+        </figcaption>
       </figure>
+
     </article>
 
+    <!-- Southern Puna Project -->
     <article class="research-project" aria-labelledby="puna-title">
-      <p class="project-meta">First author · Journal of Geophysical Research: Solid Earth · 2024</p>
-      <h2 id="puna-title">Seismicity and present-day crustal deformation in the Southern Puna Plateau</h2>
+
+      <p class="project-meta">
+        First author · Journal of Geophysical Research: Solid Earth · 2024
+      </p>
+
+      <h2 id="puna-title">
+        Seismicity and present-day crustal deformation in the Southern Puna Plateau
+      </h2>
+
       <p>
-        I used a deep-learning-based phase picker to build an improved regional earthquake
+        We used a deep-learning-based phase picker to build an improved regional earthquake
         catalog and investigate active faults and crustal deformation in the Southern Puna
         Plateau. The catalog reveals shallow strike-slip seismicity in the eastern plateau,
         contrasting with a broad seismically quiet western region, and a complex transition
         in the regional stress field. A short-lived earthquake swarm beneath Cerro Galán
         also points to possible fluid-related stress changes above its magmatic system.
       </p>
-      <p class="project-paper"><a href="https://doi.org/10.1029/2024JB028918" target="_blank" rel="noopener noreferrer">Read the paper in JGR: Solid Earth →</a></p>
+
+      <p class="project-paper">
+        <a
+          href="https://doi.org/10.1029/2024JB028918"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Read the paper in JGR: Solid Earth →
+        </a>
+      </p>
+
       <figure class="project-figure">
-        <!-- Replace this src and alt with the final Southern Puna figure. -->
-        <img src="img/projects/event_histogram.jpg" alt="Temporary research figure for the Southern Puna project; final figure to be added" loading="lazy">
-        <figcaption>Temporary figure — final project figure to be added.</figcaption>
+        <img
+          src="img/projects/event_histogram.jpg"
+          alt="Temporary research figure for the Southern Puna project; final figure to be added"
+          loading="lazy"
+        >
+        <figcaption>
+          Temporary figure — final project figure to be added.
+        </figcaption>
       </figure>
+
     </article>
 
+    <!-- Laguna del Maule Project -->
     <article class="research-project" aria-labelledby="maule-title">
-      <p class="project-meta">Second author · Communications Earth &amp; Environment · 2026</p>
-      <h2 id="maule-title">Transcrustal magma ascent beneath Laguna del Maule, Chile</h2>
+
+      <p class="project-meta">
+        Second author · Communications Earth &amp; Environment · 2026
+      </p>
+
+      <h2 id="maule-title">
+        Transcrustal magma ascent beneath Laguna del Maule, Chile
+      </h2>
+
       <p>
         This collaborative study connects deep magma transport with surface unrest at
         Laguna del Maule. We identified a zone of deep crustal seismicity linking magma
@@ -90,29 +222,71 @@
         at the surface. The findings highlight the value of deep seismicity for understanding
         the development of volcanic unrest.
       </p>
-      <p class="project-paper"><a href="https://doi.org/10.1038/s43247-026-03863-8" target="_blank" rel="noopener noreferrer">Read the paper in Communications Earth &amp; Environment →</a></p>
+
+      <p class="project-paper">
+        <a
+          href="https://doi.org/10.1038/s43247-026-03863-8"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Read the paper in Communications Earth &amp; Environment →
+        </a>
+      </p>
+
       <figure class="project-figure">
-        <!-- Temporary existing asset, not a Laguna del Maule paper figure. Replace src and alt. -->
-        <img src="img/projects/figure4.png" alt="Temporary layout figure for the Laguna del Maule project; not a figure from the paper" loading="lazy">
-        <figcaption>Temporary figure — final project figure to be added.</figcaption>
+        <img
+          src="img/projects/figure4.png"
+          alt="Temporary layout figure for the Laguna del Maule project; not a figure from the paper"
+          loading="lazy"
+        >
+        <figcaption>
+          Temporary figure — final project figure to be added.
+        </figcaption>
       </figure>
+
     </article>
+
   </main>
 
   <!-- Back-to-top button -->
-  <a role="button" id="topper" aria-label="Back to top" data-toggle="tooltip" data-placement="top" title="Top" class="btn scroll-link" href="#top"><i class="fa fa-fw fa-2x fa-caret-up" aria-hidden="true"></i></a>
+  <a
+    role="button"
+    id="topper"
+    aria-label="Back to top"
+    data-toggle="tooltip"
+    data-placement="top"
+    title="Top"
+    class="btn scroll-link"
+    href="#top"
+  >
+    <i class="fa fa-fw fa-2x fa-caret-up" aria-hidden="true"></i>
+  </a>
 
-  <!-- footer include -->
+  <!-- Footer -->
   <div id="page-footer"></div>
 
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <!-- Bootstrap JS Library -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+    crossorigin="anonymous"
+  ></script>
 
   <!-- Local scripts -->
   <script src="js/main.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $("#navbar-include").load("navbar.html", function() {
+        $("#projects").addClass("active");
+      });
+
+      $("#page-footer").load("footer.html");
+    });
+  </script>
 
 </body>
 
