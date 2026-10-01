@@ -1,0 +1,4 @@
+exclude:
+  - extra
+  - README.md
+  - scripts

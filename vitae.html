@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,25 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CV | Sankha Subhra Mahanti</title>
 
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="57x57" href="favicons_me/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="favicons_me/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="favicons_me/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="favicons_me/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="favicons_me/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="favicons_me/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="favicons_me/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="favicons_me/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicons_me/apple-icon-180x180.png">
-
-  <link rel="icon" type="image/png" sizes="192x192" href="favicons_me/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicons_me/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="favicons_me/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicons_me/favicon-16x16.png">
-
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+  <!-- Site icons -->
+  <link rel="icon" href="img/favicons/favicon.ico">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="img/favicons/manifest.json">
+  <meta name="theme-color" content="#20364c">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet"
@@ -35,31 +20,21 @@
         integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
         crossorigin="anonymous">
 
-  <!-- jQuery UI CSS -->
-  <link rel="stylesheet"
-        href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap"
-        rel="stylesheet">
-
   <!-- Font Awesome -->
   <link rel="stylesheet"
         href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
         crossorigin="anonymous">
 
-  <!-- Academicons -->
-  <link rel="stylesheet"
-        href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap">
 
   <!-- Local styles -->
   <link rel="stylesheet" href="css/main.css">
 
 </head>
 
-<body>
+<body id="top" tabindex="-1">
 
   <!-- Navbar include -->
   <div id="navbar-include"></div>
@@ -67,7 +42,7 @@
   <div class="spacer-div-3 hidden-xs"></div>
 
   <!-- Main content -->
-  <div id="main-container" class="container">
+  <main id="main-container" class="container">
 
     <div class="row">
       <div class="col-sm-12">
@@ -76,18 +51,19 @@
 
         <p><em>Find my curriculum vitae below:</em></p>
 
-        <!-- Open / Print CV -->
+        <!-- Open / Download CV -->
         <p class="text-right">
-          <a href="./CV_Sankha_july2026.pdf" target="_blank">
-            <i class="fas fa-print fa-fw" aria-hidden="true"></i>
-            &nbsp;Print CV
+          <a href="./CV_Sankha_july2026.pdf" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-file-pdf fa-fw" aria-hidden="true"></i>
+            &nbsp;Open / Download CV
           </a>
         </p>
 
         <!-- Embedded CV -->
         <iframe
           width="100%"
-          height="900px"
+          height="900"
+          title="Curriculum vitae of Sankha Subhra Mahanti"
           frameborder="0"
           scrolling="yes"
           class="embed-responsive-item"
@@ -98,11 +74,11 @@
       </div>
     </div>
 
-  </div>
+  </main>
 
   <!-- Back-to-top button -->
   <a role="button"
-     id="topper"
+     id="topper" aria-label="Back to top"
      data-toggle="tooltip"
      data-placement="top"
      title="Top"
@@ -112,7 +88,7 @@
   </a>
 
   <!-- Footer include -->
-  <div w3-include-html="footer.html"></div>
+  <div id="page-footer"></div>
 
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -120,34 +96,13 @@
   <!-- Bootstrap JS -->
   <script
     src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5vRzpU8Y5bApTppSuUkhZXN0VxHd"
+    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpU8Y5bApTppSuUkhZXN0VxHd"
     crossorigin="anonymous">
-  </script>
-
-  <!-- HTML include script -->
-  <script src="js/w3data.js"></script>
-
-  <script>
-    w3IncludeHTML();
   </script>
 
   <!-- Local scripts -->
   <script src="js/main.js"></script>
 
-  <script>
-    $(document).ready(function() {
-
-      $("#navbar-include").load("navbar.html", function() {
-
-        $("#home").removeClass("active");
-        $("#vitae").addClass("active");
-
-      });
-
-    });
-  </script>
-
 </body>
 
 </html>
-```
